@@ -1,5 +1,6 @@
 import { Box, Button, Container, Flex, Heading, HStack, Image, Link, Text, VStack } from "@chakra-ui/react";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import '../styles/styles.css';
 
 const Index = () => {
   return (
@@ -19,7 +20,7 @@ const Index = () => {
       </Box>
 
       {/* Main Section */}
-      <Box as="main" py={16} px={8} textAlign="center">
+      <Box as="main" py={16} px={8} textAlign="center" className="hero">
         <Image src="/path/to/hero-image.jpg" alt="Hero Image" mx="auto" mb={8} />
         <Heading as="h2" size="xl" mb={4}>Welcome to Our Business</Heading>
         <Text fontSize="lg" mb={8}>We create websites and online stores for small local businesses. Let us help you establish your online presence.</Text>
