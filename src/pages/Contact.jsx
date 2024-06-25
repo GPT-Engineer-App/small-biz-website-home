@@ -1,5 +1,6 @@
 import { Box, Container, Flex, Heading, HStack, Link, Text, VStack, Input, Textarea, Button } from "@chakra-ui/react";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import '../styles/styles.css';
 
 const Contact = () => {
   return (
@@ -22,7 +23,7 @@ const Contact = () => {
       <Box as="main" py={16} px={8} textAlign="center">
         <Heading as="h2" size="xl" mb={4}>Contact Us</Heading>
         <VStack spacing={8} align="start" mx="auto" maxW="lg">
-          <Box w="100%">
+          <Box w="100%" className="contact-form">
             <Heading as="h3" size="lg" mb={2}>Get in Touch</Heading>
             <form>
               <VStack spacing={4}>
